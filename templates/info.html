@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-cn">
+<head>
+    <meta charset="utf-8" />
+    <title>Form Submit Check</title>
+    <link rel="shortcut icon" href="/static/images/logo.png">
+</head>
+<body>
+    <table style='width: 100%; background-color: #334; color:#fb5;'>
+        <tr>
+            <td>number</td>
+            <td>name</td>
+            <td>email</td>
+            <td>qq</td>
+            <td>phone</td>
+            <td>sug</td>
+        </tr>
+        {% for info in infos %}
+            <tr>
+                <td>{{ info.index }}</td>
+                <td>{{ info.name }}</td>
+                <td>{{ info.email }}</td>
+                <td>{{ info.qqnumbers }}</td>
+                <td>{{ info.telephone }}</td>
+                <td>{{ info.input_ideas }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

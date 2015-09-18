@@ -1,0 +1,330 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <!--<meta http-equiv="content-type" content="text/html" charset="utf-8" />-->
+  <title>Continue技术小组</title>
+  <script type="text/javascript">
+      /* Check browser */
+      (function () {
+          var sUserAgent = navigator.userAgent;
+          var fAppVersion = parseFloat(navigator.appVersion);
+          var isOprea = sUserAgent.indexOf("Opera") > -1;
+          var isIE = sUserAgent.indexOf("compatible") > -1
+          && sUserAgent.indexOf("MSIE") > -1
+          && !isOprea;
+
+          function innerHtml() {
+              window.location.href = "attention.html";
+          }
+
+          if (isIE) {
+              var reIE = new RegExp("MSIE (\\d+\\.\\d+)");
+              reIE.test(sUserAgent);
+              var FIEVersion = parseFloat(RegExp["$1"]);
+              if (FIEVersion <= 8) {
+                  innerHtml();
+              }
+          }
+      })()
+  </script>
+  <style>
+    .homepageBg {
+        background-image: url(/static/images/homepageBg.jpg);
+    }
+    .home_next {
+        background-image: url(/static/images/homepageBg.jpg);
+    }
+    .hp_4 {
+        background-image: url(/static/images/headphotos/members_1.png);
+    }
+  </style>
+  <link rel="stylesheet" href="/static/css/jquery.fullPage.css" />
+  <link rel="stylesheet" href="/static/css/index.css" />
+  <script src="/static/js/jquery-1.8.3.min.js"></script>
+  <script src="/static/js/index.js"></script>
+  <script src="/static/js/jquery-ui-1.10.3.min.js"></script>
+  <script src="/static/js/jquery.fullPage.min.js"></script>
+  <script src="/static/js/fullpage.js"></script>
+  <script src="/static/js/homepagePos.js"></script>
+  <link rel="shortcut icon" href="/static/images/logo.png">
+</head>
+<body>
+  <div id="homepage" class="section">
+    <div class="homepageContainer">
+      <img src="/static/images/homepageBg.jpg" id="homepageBg" />
+      <div class="header">
+        <a class="logo" href="index.html"></a>
+        <nav class="nav_homepage">
+          <ul>
+            <li><a class="nav_Home" href="#page1">HOME</a></li>
+            <li><a class="nav_Members" href="#page2">MEMBERS</a></li>
+            <li><a class="nav_Achievement" href="#page3">ACHIEVEMENT</a></li>
+            <li><a class="nav_Contact" href="#page4">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="pointContainer">
+        <div class="point point_1"></div>
+        <div class="block block_1"></div>
+        <div class="text_container container_1">
+          <p>Bingo，前辈们的光辉历史都稳稳摆放在这里了，什么奖项奖都只是我们将要跨过的一级级台阶！</p>
+        </div>
+        <div class="point point_2"></div>
+        <div class="block block_2"></div>
+        <div class="text_container container_2">
+          <p>A：琳姐琳姐，你会做这个按钮的设计么？ 琳姐：我会啊。A：那你教我好了！在Continue,达者为师。</p>
+        </div>
+        <div class="point point_3"></div>
+        <div class="block block_3"></div>
+        <div class="text_container container_3">
+          <p>我们只想在这里放一个安安静静的投影仪。刘总，说好的苟富贵勿相忘，给我们置办投影仪呢，刘总你别跑！</p>
+        </div>
+        <div class="point point_4"></div>
+        <div class="block block_4"></div>
+        <div class="text_container container_4">
+          <p>沛沛！你干什么！放开那个复印机！那只是一个纯洁善良天真无邪的可打印可复印的复印机哟！妈妈再也不担心我的打印费了！</p>
+        </div>
+        <div class="point point_5"></div>
+        <div class="block block_5"></div>
+        <div class="text_container container_5">
+          <p>墙：这些该死的码农贴墙纸也只会贴一堆代码放在墙上，你们的设计师呢！</p>
+        </div>
+      </div>
+      <a class="home_next" href="#page2" title="点击浏览下一个页面"></a>
+    </div>
+  </div>
+  <div id="members" class="section">
+    <div class="members_title_1"></div>
+    <div class="members_title_2"></div>
+    <div class="membersContainer">
+      <div class="allphotos">
+        <div class="photos_1 photoblock">
+          <div class="headphoto hp_1 row_1 row_1_1">
+            <div class="cover"></div>
+            <div class="human"></div>
+          </div>
+          <div class="headphoto hp_1 row_1 row_1_2">
+            <div class="cover"></div>
+            <div class="human"></div>
+          </div>
+          <div class="headphoto hp_1 row_1 row_1_3">
+            <div class="cover"></div>
+            <div class="human"></div>
+          </div>
+          <div class="headphoto hp_1 row_1 row_1_4">
+            <div class="cover"></div>
+            <div class="human"></div>
+          </div>
+          <div class="headphoto hp_1 row_2 row_2_1">
+            <div class="cover"></div>
+            <div class="human"></div>
+          </div>
+          <div class="headphoto hp_1 row_2 row_2_2">
+            <div class="cover"></div>
+            <div class="human"></div>
+          </div>
+          <div class="headphoto hp_1 row_2 row_2_3">
+            <div class="cover"></div>
+            <div class="human"></div>
+          </div>
+          <div class="hp_next nav_members_1 row_2 row_2_4" title="Click it">
+          </div>
+        </div>
+        <div class="photos_2 photoblock">
+          <div class="headphoto hp_2 row_1 row_1_1">
+            <div class="cover"></div>
+            <div class="human"></div>
+          </div>
+          <div class="headphoto hp_2 row_1 row_1_2">
+            <div class="cover"></div>
+            <div class="human"></div>
+          </div>
+          <div class="headphoto hp_2 row_1 row_1_3">
+            <div class="cover"></div>
+            <div class="human"></div>
+          </div>
+          <div class="headphoto hp_2 row_1 row_1_4">
+            <div class="cover"></div>
+            <div class="human"></div>
+          </div>
+          <div class="headphoto hp_2 row_2 row_2_1">
+            <div class="cover"></div>
+            <div class="human"></div>
+          </div>
+          <div class="headphoto hp_2 row_2 row_2_2">
+            <div class="cover"></div>
+            <div class="human"></div>
+          </div>
+          <div class="headphoto hp_2 row_2 row_2_3">
+            <div class="cover"></div>
+            <div class="human"></div>
+          </div>
+          <div class="hp_next nav_members_2 row_2 row_2_4" title="Click it">
+          </div>
+        </div>
+        <div class="photos_3 photoblock">
+          <div class="headphoto hp_3 row_1 row_1_1">
+            <div class="cover"></div>
+            <div class="human"></div>
+          </div>
+          <div class="headphoto hp_3 row_1 row_1_2">
+            <div class="cover"></div>
+            <div class="human"></div>
+          </div>
+          <div class="headphoto hp_3 row_1 row_1_3">
+            <div class="cover"></div>
+            <div class="human"></div>
+          </div>
+          <div class="headphoto hp_3 row_1 row_1_4">
+            <div class="cover"></div>
+            <div class="human"></div>
+          </div>
+          <div class="headphoto hp_3 row_2 row_2_1">
+            <div class="cover"></div>
+            <div class="human"></div>
+          </div>
+          <div class="headphoto hp_3 row_2 row_2_2">
+            <div class="cover"></div>
+            <div class="human"></div>
+          </div>
+          <div class="headphoto hp_3 row_2 row_2_3">
+            <div class="cover"></div>
+            <div class="human"></div>
+          </div>
+          <div class="hp_next nav_members_3 row_2 row_2_4" title="Click it">
+          </div>
+        </div>
+        <!--<div class="photos_4 photoblock">
+          <div class="headphoto hp_4 row_1 row_1_1">
+            <img class="cover" src="images/headphotos/cover/c2013lixiangyu.png" />
+            <img class="human" src="images/headphotos/2013lixiangyu.png" />
+          </div>
+          <div class="headphoto hp_4 row_1 row_1_2">
+            <img class="cover" src="images/headphotos/cover/c2013quanpei.png" />
+            <img class="human" src="images/headphotos/2013quanpei.png" />
+          </div>
+          <div class="headphoto hp_4 row_1 row_1_3">
+            <img class="cover" src="images/headphotos/cover/c2013wuweiqun.png" />
+            <img class="human" src="images/headphotos/2013wuweiqun.png" />
+          </div>
+          <div class="headphoto hp_4 row_1 row_1_4">
+            <img class="cover" src="images/headphotos/cover/c2013guxinqian.png" />
+            <img class="human" src="images/headphotos/2013guxinqian.png" />
+          </div>
+          <div class="headphoto hp_4 row_2 row_2_1">
+            <img class="cover" src="images/headphotos/cover/c2013yexiangyan.png" />
+            <img class="human" src="images/headphotos/2013yexiangyang.png" />
+          </div>
+          <div class="headphoto hp_4 row_2 row_2_2">
+            <img class="cover" src="images/headphotos/cover/c2013zhangshibao.png" />
+            <img class="human" src="images/headphotos/2013zhangshibao.png" />
+          </div>
+          <div class="headphoto hp_4 row_2 row_2_3" >
+            <img class="cover" src="images/headphotos/continue.png" />
+            <img class="human" src="images/headphotos/welcome.png" />
+          </div>
+          <div class="hp_next nav_members_4 row_2 row_2_4" title="Click it">
+          </div>
+        </div>-->
+      </div>
+    </div>
+  </div>
+  <div id="achievement" class="section">
+    <div class="achieve_title"></div>
+    <div class="prev"></div>
+    <div class="next"></div>
+    <div id="windows">
+      <div class="container">
+        <div id="CSong" class="achieve">
+          <div class="text">
+            <h1>CSong</h1>
+            <div class="designer">设计者：张亚莹 完欣玥 何鑫 李佳维</div>
+            <div class="detail">看见音乐 · 连通视听。CSong是一款聋儿音调辅助系统, 利用声音可视化帮助听障儿童看到声音，学习歌唱，为听障儿童提供低花费，可持续发音学习方案。通过用不同的色彩表示音调，将标准音以彩色曲线显示出来，以可视化的用户发音点与标准音作对比，使听障儿童简单方便的学习唱歌。CSong实现了声音可视化，反馈同步化，学习娱乐化，为聋儿带来多彩的音乐世界。</div>
+            <div class="like">
+              <div class="likebuttun" onclick="return likeSubmit('csong');"></div>
+              <p class=".likenumbers">赞({{ csong }})</p>
+            </div>
+            <div class="honour"><span></span>2014 ImageCup 中国赛区二等奖</div>
+          </div>
+          <div class="CSongimg"></div>
+        </div>
+        <div id="SSS" class="achieve">
+          <div class="text">
+            <h1>全国社会保险精算分享系统</h1>
+            <div class="designer">设计者:程逸蒙 黄磊 吕琳洁 范焘</div>
+            <div class="detail">IBM smart social security解决方案致力于帮助社保机构更加智慧地管理全国社保数据和精算模型，实现对风险的评估以及对未来收支的预测和分析，为我国社保制度的建立、改革以及修订提供可靠的依据。</div>
+            <div class="like">
+              <div class="likebuttun" onclick="return likeSubmit('sss');"></div>
+              <p class=".likenumbers">赞({{ sss }})</p>
+            </div>
+            <div class="honour"><span></span>2013 IMB Power比赛一等奖</div>
+            <div class="honour"><span></span>2013 IBM Mainframe比赛二等奖</div>
+          </div>
+          <div class="SSSimg"></div>
+        </div>
+        <div id="Pigeon" class="achieve">
+          <div class="text">
+            <h1>Pigeon</h1>
+            <div class="designer">设计者：刘虓豪 周雨涵 余荟 蒋宇寰</div>
+            <div class="detail">Pigeon，一款App。它能够帮助人们之间实时共享位置信息。在室内，Pigeon可以记住你的行进路径并共享给好友，帮助他们找到你。同时，用户通过Pigeon可以帮助绘制室内地图。系统建立了行走模型的定性方式，加速度设定阈值进行分析得到步数，同时对行走过程中电子罗盘方向值进行限定误差合成，最终得到用户的行走轨迹,从而实现室内导航的功能。</div>
+            <div class="like">
+              <div class="likebuttun" onclick="return likeSubmit('pigeon');"></div>
+              <p class=".likenumbers">赞({{ pigeon }})</p>
+            </div>
+            <div class="honour"><span></span>2013 ImageCup 中国赛区一等奖</div>
+          </div>
+          <div class="Pigeonimg"></div>
+        </div>
+        <div id="baiban" class="achieve">
+          <div class="text">
+            <h1>白&nbsp;&nbsp;&nbsp;&nbsp;板</h1>
+            <div class="designer">设计者：刘子谊 严城华 米文卓 罗娅 叶虹江 杨子辰</div>
+            <div class="detail">白板是一个基于地图的分享App，将地图想象为一块白板，所有用户都能自由地向这块白板上贴各种类型的信息纸条。与过去信息分享类软件以列表为 是不会生成字符串的
+提问者评价
+主要查看模式相比，白板中用户查看纸条的主模式是地图，使信息分享更加直观有趣。白板不仅能在用户所在的地方分享信息，还能够将想分享的东西扔向其他地方。白板，让生活变得简单！</div>
+            <div class="like">
+              <div class="likebuttun" onclick="return likeSubmit('wb');"></div>
+              <p class=".likenumbers">赞({{ wb }})</p>
+            </div>
+            <div class="honour"><span></span>2013重庆市大学生移动创新大赛二等奖</div>
+          </div>
+          <div class="baibanimg"></div>
+        </div>
+      </div>
+    </div>
+    <div class="nav_achieve">
+      <ul>
+        <li><span class="achieve1">1</span></li>
+        <li><span class="achieve2">2</span></li>
+        <li><span class="achieve3">3</span></li>
+        <li><span class="achieve4">4</span></li>
+      </ul>
+    </div>
+  </div>
+  <div id="contact" class="section">
+    <div id="inner">
+      <div class="container">
+        <h1>CONTACT US</h1>
+        <span>
+          If you want to become one of us , please contact us by finishing the form.
+        </span>
+        <form id="contact-form">
+          <div id="l_form">
+            <input class="lform name" placeholder="Your Name" required type="text" name="name">
+            <input class="lform email" placeholder="Your Email" required type="text" name="email">
+            <input class="lform qqnumbers" placeholder="Your QQ numbers" required type="text" name="qqnumbers">
+            <input class="lform telephone" placeholder="Your Telephone" required type="text" name="telephone">
+          </div>
+          <div id="r_form">
+            <textarea class="input_ideas" name="input_ideas" placeholder="Why you want to join us?" required></textarea>
+            <input class="sub_form" type="submit" value="Send It Away!" onclick="return formSubmit();">
+          </div>
+        </form>
+      </div>
+    </div>
+    <div id="copyright">Copyright&nbsp;&copy;&nbsp;Continue&nbsp;113.zero</div>
+  </div>
+  
+</body>
+</html>
