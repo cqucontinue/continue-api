@@ -320,12 +320,14 @@ function formSubmit() {
           alert("提交失败");
       }, 
       success: function(data){
-        if (data == "repeatly")
+        if (data == "repeatly") {
            alert("不能重复提交!");
+        }
         else{
             alert("提交成功,感谢您对continue技术小组的支持!");
         }
-        window.location.href = "http://127.0.0.1:5000/";
+        window.location.href = "http://127.0.0.1:5000/#page4";
+
       }
     })
 }

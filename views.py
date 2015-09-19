@@ -1,17 +1,10 @@
-from flask import Flask, request, make_response, render_template
-from pymongo import MongoClient
+from flask import request, make_response, render_template
 from xml.etree import ElementTree
-
-# connect mongodb
-conn = MongoClient("localhost", 27017)
-db = conn.newmembers
-coll = db.membersinfo
+from model import db, Members, app
 
 # open like.xml
 tree = ElementTree.parse("like.xml")
 like = tree.getroot()
-
-app = Flask(__name__)
 
 @app.route("/", methods=["GET", "POST"])
 def index():
@@ -25,15 +18,15 @@ def index():
 def contact_us():
 	if request.method == "POST":
 		name = request.form.get("name")
-		if coll.find({"name": name}):
+		if Members.query.filter_by(name=name).first():
 			return make_response("repeatly")
 		else:
 			email = request.form.get("email")
 			qqnumbers = request.form.get("qqnumbers")
 			telephone = request.form.get("telephone")
 			input_ideas = request.form.get("input_ideas")
-			coll.save({"name": name, "email": email, "qqnumbers": qqnumbers, 
-							"telephone": telephone, "input_ideas": input_ideas})
+			member = Members(name=name, email=email, qq=qqnumbers, telephone=telephone, ideas=input_ideas)
+			db.session.add(member)
 			return make_response("success")
 
 @app.route("/agree", methods=["POST"])
@@ -50,8 +43,9 @@ def agree():
 def getinfo():
 	infos = []
 	count = 1
-	for newMemberInfo in coll.find():
-		del newMemberInfo["_id"]
+	for MemberInfo in Members.query.all():
+		newMemberInfo = MemberInfo.__dict__
+		del newMemberInfo["_sa_instance_state"]
 		newMemberInfo["index"] = count
 		infos.append(newMemberInfo)
 		count += 1
